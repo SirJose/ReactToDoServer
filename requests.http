@@ -1,0 +1,36 @@
+### Test
+GET http://localhost:3001/
+
+### Obtener To-Do's
+GET http://localhost:3001/todos
+
+### Obtener To-Do individual
+GET http://localhost:3001/todos/2
+
+### Crear To-Do
+POST http://localhost:3001/todos
+Content-Type: application/json
+
+{
+    "codigo": 2,
+    "texto": "Hacer compras del mercado.",
+    "estado": "pendiente"
+}
+
+### Modificar producto 
+PUT http://localhost:3001/todos/2
+Content-Type: application/json
+
+{
+    "texto": "Lavar el carro.",
+    "estado": "completado"
+}
+
+### Eliminar producto 
+DELETE http://localhost:3001/todos/2
+
+### Filtrar To-Do's por texto
+GET http://localhost:3001/todos?texto=cuarto
+
+### Filtrar To-Do's por estado
+GET http://localhost:3001/todos?estado=pendiente
