@@ -5,6 +5,16 @@ const todosList = [
         codigo: lastId,
         texto: "Ordenar mi cuarto",
         estado: "completado",
+    },
+    {
+        codigo: lastId++,
+        texto: "Bañar al perro",
+        estado: "pendiente"
+    },
+    {
+        codigo: lastId++,
+        texto: "Hacer compras del mercado",
+        estado: "pendiente"
     }
 ];
 
